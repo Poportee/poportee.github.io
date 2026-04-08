@@ -18,36 +18,38 @@ languages:
           name: Blog
           title: Blog posts
           url: /blogs
-          weight: 1
-        - identifier: gallery
-          name: Gallery
-          title: Image gallery
-          url: /gallery
-          weight: 2
+          weight: 10
   fr:
     contentDir: "content/fr"
     languageName: "Français"
     weight: 2
-    menu:
-      main:
-        - identifier: blog
-          name: Blog
-          title: Articles de blog
-          url: /fr/blogs
-          weight: 1
-        - identifier: gallery
-          name: Galerie
-          title: Galerie d'images
-          url: /fr/gallery
-          weight: 2
     params:
       hero:
         intro: "Bonjour, je m'appelle"
         title: "Paul."
-        subtitle: "Je construis des choses pour le web"
-        content: "Une développeuse passionnée d'applications web. J'ai tendance à utiliser des technologies web modernes pour créer des sites web qui ont fière allure, qui sont agréables et qui fonctionnent correctement."
+        subtitle: "J'aime le développement et les nouvelles technologies"
+        content: "Un étudiant en dernière année d'école d'ingénieur chez IMT Mines Alès. Cherche un stage de fin d'études dans le domaine de l'intelligence artificielle et de la science des données."
         button:
           name: "CV"
+
+      about:
+        enable: true
+        title: "About Me"
+        image: "/images/tete.jpg"
+        content: |-
+          Actuellement étudiant en échange à l’École de Technologie Supérieure de Montréal, j'ai une formation d'ingénieur généraliste spécialisé en intelligence artificielle et sciences des données. Curieux, j'ai touché à divers domaines de l'IT comme le développement de jeux vidéo, l'informatique quantique ou l'ingénierie logicielle.
+
+          Je cherche actuellement un stage de fin d'études dans le domaine de l'intelligence artificielle.
+        skills:
+          enable: true
+          title: "Voici quelques technologies avec lesquelles j'ai récemment travaillé :"
+          items:
+            - "HTML"
+            - "CSS"
+            - "JavaScript"
+            - "React"
+            - "Node"
+            - "Express"
 
 outputs:
   home:
@@ -74,52 +76,14 @@ markup:
     renderer:
       unsafe: true
 
-Menus:
-  main:
-    - identifier: gallery
-      name: Gallery
-      title: Gallery
-      url: /gallery
-      weight: 2
-    #Dropdown menu
-    # - identifier: dropdown
-    #   title: Example dropdown menu
-    #   name: Dropdown
-    #   weight: 3
-    # - identifier: dropdown1
-    #   title: example dropdown 1
-    #   name: example 1
-    #   url: /#
-    #   parent: dropdown
-    #   weight: 1
-    # - identifier: dropdown2
-    #   title: example dropdown 2
-    #   name: example 2
-    #   url: /#
-    #   parent: dropdown
-    #   weight: 2
 
 params:    
 
   title: "Hugo Profile"
   description: Text about my cool site
-  # staticPath: ""  # The path to serve the static files from
   favicon: "/fav.png"
-
-  # Whether to serve bootstrap css and js files from CDN or not. Can be set to true, "css" or "js" to choose between
-  # serving both, only the css, or only the js files through the CDN. Any other value will make so that CDN is not used.
-  # Note the lack of "" in true, it should be of boolean type.
   useBootstrapCDN: false
-
-  # If you want to load dynamically responsive images from Cloudinary
-  # This requires your images to be uploaded + hosted on Cloudinary
-  # Uncomment and change YOUR_CLOUD_NAME to the Cloud Name in your Cloudinary console
-  # cloudinary_cloud_name: "YOUR_CLOUD_NAME"
-
-  # Whether to add mathjax support on all pages. Alternatively, you can opt-in per page by adding `mathjax: true` in the frontmatter.
   mathjax: false
-
-  # Whether the fade animations on the home page will be enabled
   animate: true
 
   theme:
@@ -155,9 +119,9 @@ params:
   # If you want to customize the menu, you can change it here
   navbar:
     align: ms-auto # Left: ms-auto | center: mx-auto | right: me-auto | Default: ms-auto
-    # brandLogo: "/logo.png" # Logo for the brand | default is the favicon variable
+    brandLogo: "/fav.png" 
     # showBrandLogo: false # Show brand logo in nav bar | default is true
-    brandName: "Hugo Profile" # Brand name for the brand | default is the title variable
+    brandName: "Paul Profile" # Brand name for the brand | default is the title variable
     disableSearch: false
     # searchPlaceholder: "Search"
     stickyNavBar:
@@ -172,16 +136,31 @@ params:
       disableAchievements: false
       disableContact: false
 
+  menu:
+    sections:
+      - name: "About"
+        id: "about"
+        weight: 1      # 1er position
+      - name: "Projects"
+        id: "projects"
+        weight: 2      # 2ème position (ton souhait)
+      - name: "Experience"
+        id: "experience"
+        weight: 3      # 3ème position
+      - name: "Education"
+        id: "education"
+        weight: 4
+
   # Hero
   hero:
     enable: true
     intro: "Hi, my name is"
     title: "Paul."
     subtitle: "I like development and new technologies."
-    content: "A final-year engineering student looking for a final-year internship in machine learning."
-    image: /images/hero.svg
+    content: "A final-year engineering student looking for a final-year internship in machine learning and data science."
+    image: /images/tete.jpg
     bottomImage:
-      enable: true
+      enable: true  
       roundImage: true
     button:
       enable: true
@@ -192,19 +171,19 @@ params:
     socialLinks:
       fontAwesomeIcons:
         - icon: fab fa-github
-          url: https://example.com
+          url: https://github.com/Poportee
         - icon: fab fa-x-linkedin
-          url: https://example.com
+          url: https://linkedin.com/in/paulaporte-lkn/
 
   # About
   about:
     enable: true
     title: "About Me"
-    image: "/images/me.png"
+    image: "/images/tete.jpg"
     content: |-
-      I am a software developer with a passion for web development. I have a background in computer science and mathematics, and I have a strong interest in the intersection of technology and art. I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA.
+      Currently an exchange student at the École de Technologie Supérieure in Montreal, I have a background as a generalist engineer specializing in artificial intelligence and data science. Curious by nature, I have explored various IT fields such as video game development, quantum computing, and software engineering.
 
-      I am currently working on a project that will be used to help people find the best way to get around the city.
+      I am currently looking for a final-year internship in machine learning.
     skills:
       enable: true
       title: "Here are a few technologies I've been working with recently:"
@@ -327,9 +306,9 @@ params:
   contact:
     enable: true
     # title: "Custom Name"
-    content: My inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!
+    content: My inbox is always open. Feel free to send me a question or anything else!
     btnName: Mail me
-    btnLink: mailto:gurusabarisha@gmail.com
+    btnLink: mailto:paulaporte0@gmail.com
     # formspree:
     #   enable: true # `contact.email` value will be ignored
     #   formId: abcdefgh # Take it from your form's endpoint, like 'https://formspree.io/f/abcdefgh'
