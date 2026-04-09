@@ -29,13 +29,27 @@ languages:
         title: "Paul."
         subtitle: "J'aime le développement et les nouvelles technologies"
         content: "Un étudiant en dernière année d'école d'ingénieur chez IMT Mines Alès. Cherche un stage de fin d'études dans le domaine de l'intelligence artificielle et de la science des données."
+        image: /images/me_cv.jpg
+        bottomImage:
+          enable: true  
+          roundImage: true
         button:
+          enable: true
           name: "CV"
+          url: "/docs/CV_Paul_Laporte_Ingenieur_IA.pdf"
+          download: true
+          newPage: true
+        socialLinks:
+          fontAwesomeIcons:
+            - icon: fab fa-github
+              url: https://github.com/Poportee
+            - icon: fab fa-linkedin
+              url: https://linkedin.com/in/paulaporte-lkn/
 
       about:
         enable: true
         title: "About Me"
-        image: "/images/tete.jpg"
+        image: "/images/me.jpg"
         content: |-
           Actuellement étudiant en échange à l’École de Technologie Supérieure de Montréal, j'ai une formation d'ingénieur généraliste spécialisé en intelligence artificielle et sciences des données. Curieux, j'ai touché à divers domaines de l'IT comme le développement de jeux vidéo, l'informatique quantique ou l'ingénierie logicielle.
 
@@ -44,12 +58,96 @@ languages:
           enable: true
           title: "Voici quelques technologies avec lesquelles j'ai récemment travaillé :"
           items:
-            - "HTML"
-            - "CSS"
-            - "JavaScript"
-            - "React"
-            - "Node"
-            - "Express"
+            - "C"
+            - "PyTorch"
+            - "Cuda"
+            - "Unity"
+            - "OpenMP"
+      
+      projects:
+        enable: true
+        # title: "Custom Name"
+        items:
+          - title: ML vs Deep Learning pour la prédiction de valeurs foncières
+            content: Développement d'une pipeline complète d'estimation immobilière comparant l'efficacité des arbres boostés et des architectures Transformer sur les données DVF.
+            image: /images/projects/ml_vs_dl.png
+            featured:
+              name: Demo
+              link: https://ml-vs-dl-property-pricing-demo.streamlit.app/
+            badges:
+              - "PyTorch"
+              - "LightGBM"
+              - "Transformers"
+              - "Feature Engineering"
+              - "API Data Gouv"
+            links:
+              - icon: fab fa-github
+                url: https://github.com/Poportee/ml-vs-dl-property-pricing
+
+      experience:
+        enable: true
+        # title: "Custom Name"
+        items:
+          - company: "CTU Prague"
+            companyUrl: "https://www.cvut.cz/en"
+            jobs:
+              - name: "Stagiaire Data Scientist"
+                date: "Mai 2025 - Août 2025"
+                content: "Analyse de données téléphoniques tchèques et création de modèles statistiques prédictifs."
+                info:
+                  content: Travail de recherche en équipe pour faire une publication
+                featuredItems:
+                  fontAwesomeIcons:
+                    - icon: fa-plus
+                      url: https://react.dev/
+                      tooltip: See the post
+  
+      education:
+        enable: true
+        # title: "Custom Name"
+        index: false
+        items:
+          - title: "Échange académique en ingénierie logicielle."
+            school:
+              name: "École de Technologie Supérieure, Montréal"
+              url: "https://www.etsmtl.ca/"
+            date: "2026"
+            content: |-
+              Cours pertinents :
+                - Informatique quantique
+                - Architecture de calcul parallèle
+                - Intelligence artificielle
+                - Développement de jeux vidéo
+          - title: "Diplôme d'ingénieur."
+            school:
+              name: "IMT Mines Alès"
+              url: "https://www.imt-mines-ales.fr/"
+            date: "2023-2026"
+            content: |-
+              Programme d'ingénieur généraliste.
+
+              Cours pertinents :
+                - Apprentissage automatique avancé
+                - Apprentissage profond
+                - Collecte et visualisation des données
+                - Statistiques et mathématiques avancées
+                - Génie logiciel
+                - Finance
+                - Stratégie entrepreneuriale
+          - title: "CPGE MPI"
+            school:
+              name: "Lycée Pierre de Fermat"
+              url: "https://fermat.mon-ent-occitanie.fr/classes-preparatoires-aux-grandes-ecoles/"
+            date: "2021-2023"
+            content: |-
+              Mathématiques, Physique et Infomatique théoriques.
+      
+      contact:
+        enable: true
+        # title: "Custom Name"
+        content: Ma boîte de réception est toujours ouverte. N’hésitez pas à m’envoyer une question ou autre chose !
+        btnName: Mail me
+        btnLink: mailto:paulaporte0@gmail.com
 
 outputs:
   home:
@@ -118,12 +216,10 @@ params:
 
   # If you want to customize the menu, you can change it here
   navbar:
-    align: ms-auto # Left: ms-auto | center: mx-auto | right: me-auto | Default: ms-auto
+    align: ms-auto
     brandLogo: "/fav.png" 
-    # showBrandLogo: false # Show brand logo in nav bar | default is true
     brandName: "Paul Profile" # Brand name for the brand | default is the title variable
-    disableSearch: false
-    # searchPlaceholder: "Search"
+    disableSearch: true
     stickyNavBar:
       enable : true
       showOnScrollUp : true
@@ -140,13 +236,13 @@ params:
     sections:
       - name: "About"
         id: "about"
-        weight: 1      # 1er position
+        weight: 1
       - name: "Projects"
         id: "projects"
-        weight: 2      # 2ème position (ton souhait)
+        weight: 2  
       - name: "Experience"
         id: "experience"
-        weight: 3      # 3ème position
+        weight: 3
       - name: "Education"
         id: "education"
         weight: 4
@@ -158,28 +254,28 @@ params:
     title: "Paul."
     subtitle: "I like development and new technologies."
     content: "A final-year engineering student looking for a final-year internship in machine learning and data science."
-    image: /images/tete.jpg
+    image: /images/me_cv.jpg
     bottomImage:
       enable: true  
       roundImage: true
     button:
       enable: true
       name: "Resume"
-      url: "#"
+      url: "/docs/CV_Paul_Laporte_AI_engineer.pdf"
       download: true
-      newPage: false
+      newPage: true
     socialLinks:
       fontAwesomeIcons:
         - icon: fab fa-github
           url: https://github.com/Poportee
-        - icon: fab fa-x-linkedin
+        - icon: fab fa-linkedin
           url: https://linkedin.com/in/paulaporte-lkn/
 
   # About
   about:
     enable: true
     title: "About Me"
-    image: "/images/tete.jpg"
+    image: "/images/me.jpg"
     content: |-
       Currently an exchange student at the École de Technologie Supérieure in Montreal, I have a background as a generalist engineer specializing in artificial intelligence and data science. Curious by nature, I have explored various IT fields such as video game development, quantum computing, and software engineering.
 
@@ -188,91 +284,50 @@ params:
       enable: true
       title: "Here are a few technologies I've been working with recently:"
       items:
-        - "HTML"
-        - "CSS"
-        - "JavaScript"
-        - "React"
-        - "Node"
-        - "Express"
+        - "C"
+        - "PyTorch"
+        - "Cuda"
+        - "Unity"
+        - "OpenMP"
 
   # projects
   projects:
     enable: true
     # title: "Custom Name"
     items:
-      - title: Hugo Profile
-        content: A highly customizable and mobile first Hugo template for personal portfolio and blog.
-        image: /images/projects/profile.png
+      - title: ML vs Deep Learning on real estate pricing
+        content: Built an end-to-end pipeline to estimate property prices, comparing the performance of Gradient Boosted Trees and Transformer architectures using French DVF open data.
+        image: /images/projects/ml_vs_dl.png
         featured:
           name: Demo
-          link: https://hugo-profile.netlify.app
+          link: https://ml-vs-dl-property-pricing-demo.streamlit.app/
         badges:
-          - "Hugo"
-          - "Bootstrap"
-          - "Javascript"
-        links:
-          - icon: fa fa-envelope
-            url: mailto:?subject=Hugo%20Profile%20Template&body=Check%20it%20out:%20https%3a%2f%2fhugo-profile.netlify.app%2fblog%2fmarkdown-syntax%2f
-          - icon: fab fa-github
-            url: https://github.com/gurusabarish/hugo-profile
-          - icon: fab fa-twitter
-            url: https://twitter.com/intent/tweet?text=Check+it+out:&url=https%3A%2F%2Fgithub.com%2Fgurusabarish%2Fhugo-profile
-
-      - title: Image Converter
-        content: A web app to convert image to pdf, png to jpg, png to jpg and png to webp without database using django.
-        image: /images/projects/converter.jpg
-        featured:
-          name: Demo
-          link: https://django-converter.herokuapp.com
-        badges:
-          - "Django"
-          - "Bootstrap"
+          - "PyTorch"
+          - "LightGBM"
+          - "Transformers"
+          - "Feature Engineering"
+          - "API Data Gouv"
         links:
           - icon: fab fa-github
-            url: https://github.com/gurusabarish/converter
+            url: https://github.com/Poportee/ml-vs-dl-property-pricing
 
-      - title: Hugo Profile V2
-        content: A clean and simple Hugo template for personal portfolio and blog.
-        image: /images/projects/profile2.jpg
-        featured:
-          name: Demo V2
-          link: https://hugo-profile-2.netlify.app
-        badges:
-          - "Hugo"
-          - "Bootstrap"
-          - "Javascript"
-        links:
-          - icon: fab fa-github
-            url: https://github.com/gurusabarish/HugoProfileV2
-
-  # Experience
   experience:
     enable: true
     # title: "Custom Name"
     items:
-      - company: "Facebook"
-        companyUrl: "https://example.com"
+      - company: "CTU Prague"
+        companyUrl: "https://www.cvut.cz/en"
         jobs:
-          - name: "Senior Software Developer"
-            date: "Jan 2023 - present"
-            content: "I am currently working as a senior software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city."
+          - name: "Data Scientist Intern"
+            date: "May 2025 - August 2025"
+            content: "Analysis of Czech phone data and creation of predictive statistical models."
             info:
-              content: Working as a senior software developer
+              content: Research in team to publish a paper
             featuredItems:
               fontAwesomeIcons:
-                - icon: fa-brands fa-react
+                - icon: fa-plus
                   url: https://react.dev/
-                  tooltip: Example tooltip content
-                - icon: fab fa-x-twitter
-                  url: https://example.com
-                  # tooltip: Example tooltip content
-              customIcons:
-                - icon: /fav.png
-                  url: "https://example.com"
-                  tooltip: Example tooltip content
-          - name: "Software Developer"
-            date: "Jan 2022 - Dec 2023"
-            content: "I worked as a software developer. I worked on a project that will be used to help people find the best way to get around the city."
+                  tooltip: See the post
 
   # Education
   education:
@@ -280,16 +335,40 @@ params:
     # title: "Custom Name"
     index: false
     items:
-      - title: "Master of Business Administration"
+      - title: "Academic exchange in software engineering."
         school:
-          name: "University of California, Berkeley"
-          url: "https://example.org"
-        date: "2013 - 2015"
-        GPA: "3.8 out of 5.0"
+          name: "École de Technologie Supérieure, Montréal"
+          url: "https://www.etsmtl.ca/"
+        date: "2026"
         content: |-
-          Extracurricular Activities
-            - Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            - Tempora esse, eaque delectus nulla quo doloribus itaque expedita alias natus optio totam maxime nihil excepturi velit a animi laborum hic similique.
+          Revelant Courses: 
+            - Quantum computing
+            - Parallel computing architecture
+            - Artificial intelligence
+            - Video game development
+      - title: "Engineering degree."
+        school:
+          name: "IMT Mines Alès"
+          url: "https://www.imt-mines-ales.fr/"
+        date: "2023-2026"
+        content: |-
+          General engineering program.
+
+          Revelant Courses:
+            - Advanced machine learning
+            - Deep learning
+            - Data collection and visualization
+            - Advanced statistics and mathematics
+            - Software engineering
+            - Finance
+            - Entrepreneurial strategy
+      - title: "CPGE MPI"
+        school:
+          name: "Lycée Pierre de Fermat"
+          url: "https://fermat.mon-ent-occitanie.fr/classes-preparatoires-aux-grandes-ecoles/"
+        date: "2021-2023"
+        content: |-
+          Mathematics, physics, and theoretical computer science.
 
   # Achievements
   achievements:
