@@ -93,14 +93,25 @@ languages:
             jobs:
               - name: "Stagiaire Data Scientist"
                 date: "Mai 2025 - Août 2025"
-                content: "Analyse de données téléphoniques tchèques et création de modèles statistiques prédictifs."
+                content: "Analyse des données téléphoniques tchèques et création de modèles statistiques prédictifs."
                 info:
                   content: Travail de recherche en équipe pour faire une publication
                 featuredItems:
                   fontAwesomeIcons:
                     - icon: fa-plus
                       url: https://react.dev/
-                      tooltip: See the post
+                      tooltip: Voir le post
+          - company: "Réallon"
+            companyUrl: "https://www.serreponcon.com/reallon/"
+            jobs:
+              - name: "Développeur Power BI"
+                date: "Nov 2024 - Fev 2025"
+                content: Création d'un tableau de bord dynamique et automatisé pour les statistiques financières de la station de ski de Réallon."
+                featuredItems:
+                  fontAwesomeIcons:
+                    - icon: fa-plus
+                      url: https://react.dev/
+                      tooltip: Voir le post 
   
       education:
         enable: true
@@ -323,6 +334,17 @@ params:
             content: "Analysis of Czech phone data and creation of predictive statistical models."
             info:
               content: Research in team to publish a paper
+            featuredItems:
+              fontAwesomeIcons:
+                - icon: fa-plus
+                  url: https://react.dev/
+                  tooltip: See the post
+      - company: "Réallon"
+        companyUrl: "https://www.serreponcon.com/reallon/"
+        jobs:
+          - name: "Power BI Developer"
+            date: "Nov 2024 - Feb 2025"
+            content: "Creation of a dynamic and automated dashboard for the financial statistics of the Réallon ski resort."
             featuredItems:
               fontAwesomeIcons:
                 - icon: fa-plus
