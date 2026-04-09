@@ -95,7 +95,7 @@ languages:
               - "ggplot2"
             links:
               - icon: fab fa-github
-                url: https://github.com/Poportee/ml-vs-dl-property-pricing
+                url: https://github.com/Poportee/pisa_data_collection
 
       experience:
         enable: true
@@ -346,7 +346,7 @@ params:
           - "ggplot2"
         links:
           - icon: fab fa-github
-            url: https://github.com/Poportee/ml-vs-dl-property-pricing
+            url: https://github.com/Poportee/pisa_data_collection
 
   experience:
     enable: true
