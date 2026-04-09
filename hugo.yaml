@@ -69,7 +69,7 @@ languages:
         # title: "Custom Name"
         items:
           - title: ML vs Deep Learning pour la prédiction de valeurs foncières
-            content: Développement d'une pipeline complète d'estimation immobilière comparant l'efficacité des arbres boostés et des architectures Transformer sur les données DVF.
+            content: Développement d'une pipeline complète d'estimation immobilière comparant l'efficacité des arbres boostés et des architectures Transformer sur les données DVF (~13M d'entrées).
             image: /images/projects/ml_vs_dl.png
             featured:
               name: Demo
@@ -80,6 +80,19 @@ languages:
               - "Transformers"
               - "Feature Engineering"
               - "API Data Gouv"
+            links:
+              - icon: fab fa-github
+                url: https://github.com/Poportee/ml-vs-dl-property-pricing
+          - title: Analyse exploratoire et Dashboard des données PISA
+            content: Nettoyage et visualisation de 500k+ lignes pour identifier les facteurs de réussite scolaire en europe.
+            image: /images/projects/pisa_fr.png
+            featured:
+              name: Demo
+              link: https://paul-laporte.shinyapps.io/Scolaire-data/#section-sciences
+            badges:
+              - "R"
+              - "Shiny"
+              - "ggplot2"
             links:
               - icon: fab fa-github
                 url: https://github.com/Poportee/ml-vs-dl-property-pricing
@@ -307,7 +320,7 @@ params:
     # title: "Custom Name"
     items:
       - title: ML vs Deep Learning on real estate pricing
-        content: Built an end-to-end pipeline to estimate property prices, comparing the performance of Gradient Boosted Trees and Transformer architectures using French DVF open data.
+        content: Built an end-to-end pipeline to estimate property prices, comparing the performance of Gradient Boosted Trees and Transformer architectures using French DVF open data (~13M entries).
         image: /images/projects/ml_vs_dl.png
         featured:
           name: Demo
@@ -318,6 +331,19 @@ params:
           - "Transformers"
           - "Feature Engineering"
           - "API Data Gouv"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/Poportee/ml-vs-dl-property-pricing
+      - title: Exploratory analysis and dashboard of PISA data
+        content: Cleaning and visualization of 600k+ rows to identify factors of academic success in Europe.
+        image: /images/projects/pisa_eng.png
+        featured:
+          name: Demo
+          link: https://paul-laporte.shinyapps.io/Scolaire-data/#section-sciences
+        badges:
+          - "R"
+          - "Shiny"
+          - "ggplot2"
         links:
           - icon: fab fa-github
             url: https://github.com/Poportee/ml-vs-dl-property-pricing
