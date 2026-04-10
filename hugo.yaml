@@ -349,7 +349,7 @@ params:
         companyUrl: "https://www.cvut.cz/en"
         jobs:
           - name: "Data Scientist Intern"
-            date: "May 2025 - August 2025"
+            date: "May 2025 - Aug 2025"
             content: "Analysis of Czech phone data and creation of predictive statistical models."
             info:
               content: Research in team to publish a paper
