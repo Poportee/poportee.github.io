@@ -12,13 +12,6 @@ languages:
     languageName: "English"
     weight: 1
     contentDir: "content"
-    menu:
-      main:
-        - identifier: blog
-          name: Blog
-          title: Blog posts
-          url: /blogs
-          weight: 10
   fr:
     contentDir: "content/fr"
     languageName: "Français"
