@@ -278,7 +278,7 @@ params:
     button:
       enable: true
       name: "Resume"
-      url: "/docs/CV_Paul_Laporte_AI_engineer.pdf"
+      url: "/docs/Resume_Paul_Laporte_AI_engineer.pdf"
       download: true
       newPage: true
     socialLinks:
