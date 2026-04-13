@@ -108,8 +108,7 @@ languages:
             jobs:
               - name: "Data Scientist Intern"
                 date: "May 2025 - Aug 2025"
-                content: "Analysis of Czech phone data and creation of predictive statistical models.
-                 
+                content: "Analysis of Czech phone data and creation of predictive statistical models.<br>
                   Statistics, Time Series, SVD."
                 info:
                   content: Research in team to publish a paper
@@ -123,8 +122,7 @@ languages:
             jobs:
               - name: "Power BI Developer"
                 date: "Nov 2024 - Feb 2025"
-                content: "Creation of a dynamic and automated dashboard for the financial statistics of the Réallon ski resort. 
-                  
+                content: "Creation of a dynamic and automated dashboard for the financial statistics of the Réallon ski resort. <br>
                   PowerBI, DAX, PowerQuery."
                 featuredItems:
                   fontAwesomeIcons:
@@ -285,8 +283,7 @@ languages:
             jobs:
               - name: "Stagiaire Data Scientist"
                 date: "Mai 2025 - Août 2025"
-                content: "Analyse des données téléphoniques tchèques et création de modèles statistiques prédictifs.
-                
+                content: "Analyse des données téléphoniques tchèques et création de modèles statistiques prédictifs.<br>
                   Statistics, Time Series, SVD."
                 info:
                   content: Travail de recherche en équipe pour faire une publication
@@ -300,8 +297,7 @@ languages:
             jobs:
               - name: "Développeur Power BI"
                 date: "Nov 2024 - Fev 2025"
-                content: "Création d'un tableau de bord dynamique et automatisé pour les statistiques financières de la station de ski de Réallon.
-                
+                content: "Création d'un tableau de bord dynamique et automatisé pour les statistiques financières de la station de ski de Réallon.<br>
                   PowerBI, DAX, PowerQuery."
                 featuredItems:
                   fontAwesomeIcons:
