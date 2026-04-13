@@ -11,13 +11,187 @@ languages:
   en:
     languageName: "English"
     weight: 1
-    contentDir: "content"
+    contentDir: "content/en"
+    params:
+      hero:
+        enable: true
+        intro: "Hi, my name is"
+        title: "Paul."
+        subtitle: "I like development and new technologies."
+        content: "A final-year engineering student looking for a final-year internship in machine learning and data science."
+        image: /images/me_cv.jpg
+        bottomImage:
+          enable: true  
+          roundImage: true
+        button:
+          enable: true
+          name: "Resume"
+          url: "/docs/Resume_Paul_Laporte_AI_engineer.pdf"
+          download: true
+          newPage: true
+        socialLinks:
+          fontAwesomeIcons:
+            - icon: fab fa-github
+              url: https://github.com/Poportee
+            - icon: fab fa-linkedin
+              url: https://linkedin.com/in/paulaporte-lkn/
+
+      about:
+        enable: true
+        title: "About Me"
+        image: "/images/me.jpg"
+        content: |-
+          Currently an exchange student at the École de Technologie Supérieure in Montreal, I have a background as a generalist engineer specializing in artificial intelligence and data science. Curious by nature, I have explored various IT fields such as video game development, quantum computing, and software engineering.
+
+          I am currently looking for a final-year internship in machine learning.
+        skills:
+          enable: true
+          title: "Here are a few technologies I've been working with recently:"
+          items:
+            - "C"
+            - "PyTorch"
+            - "Cuda"
+            - "Unity"
+            - "OpenMP"
+
+      projects:
+        enable: true
+        items:
+          - title: ML vs Deep Learning on real estate pricing
+            content: Built an end-to-end pipeline to estimate property prices, comparing the performance of Gradient Boosted Trees and Transformer architectures using French DVF open data (~13M entries).
+            image: /images/projects/ml_vs_dl.png
+            featured:
+              name: Demo
+              link: https://ml-vs-dl-property-pricing-demo.streamlit.app/
+            badges:
+              - "PyTorch"
+              - "LightGBM"
+              - "Transformers"
+              - "Feature Engineering"
+              - "API Data Gouv"
+            links:
+              - icon: fab fa-github
+                url: https://github.com/Poportee/ml-vs-dl-property-pricing
+          - title: Exploratory analysis and dashboard of PISA data
+            content: Cleaning and visualization of 600k+ rows to identify factors of academic success in Europe.
+            image: /images/projects/pisa_eng.png
+            featured:
+              name: Demo
+              link: https://paul-laporte.shinyapps.io/Scolaire-data/#section-sciences
+            badges:
+              - "R"
+              - "Shiny"
+              - "ggplot2"
+            links:
+              - icon: fab fa-github
+                url: https://github.com/Poportee/pisa_data_collection
+          - title: Java Games Hub
+            content: Design of a retro game library (Pac-Man, Chess, Tic-Tac-Toe) entirely in Java, with an extensible architecture and native AWT/Swing rendering management.
+            image: /images/projects/java_games_lib.png
+            featured:
+              name: Overwiew
+              link: /projects/java_games_lib_en/
+              newPage: false
+            badges:
+              - "Object-oriented programming"
+              - "Software Architecture"
+              - "Java"
+            links:
+              - icon: fab fa-github
+                url: https://github.com/Poportee/java_games_library
+
+      experience:
+        enable: true
+        items:
+          - company: "CTU Prague"
+            companyUrl: "https://www.cvut.cz/en"
+            jobs:
+              - name: "Data Scientist Intern"
+                date: "May 2025 - Aug 2025"
+                content: "Analysis of Czech phone data and creation of predictive statistical models.
+                 
+                  Statistics, Time Series, SVD."
+                info:
+                  content: Research in team to publish a paper
+                featuredItems:
+                  fontAwesomeIcons:
+                    - icon: fa-plus
+                      url: https://react.dev/
+                      tooltip: See the post
+          - company: "Réallon"
+            companyUrl: "https://www.serreponcon.com/reallon/"
+            jobs:
+              - name: "Power BI Developer"
+                date: "Nov 2024 - Feb 2025"
+                content: "Creation of a dynamic and automated dashboard for the financial statistics of the Réallon ski resort. 
+                  
+                  PowerBI, DAX, PowerQuery."
+                featuredItems:
+                  fontAwesomeIcons:
+                    - icon: fa-plus
+                      url: https://react.dev/
+                      tooltip: See the post
+
+      education:
+        enable: true
+        index: false
+        items:
+          - title: "Academic exchange in software engineering."
+            school:
+              name: "École de Technologie Supérieure, Montréal"
+              url: "https://www.etsmtl.ca/"
+            date: "2026"
+            content: |-
+              Revelant Courses: 
+                - Quantum computing
+                - Parallel computing architecture
+                - Artificial intelligence
+                - Video game development
+          - title: "Engineering degree."
+            school:
+              name: "IMT Mines Alès"
+              url: "https://www.imt-mines-ales.fr/"
+            date: "2023-2026"
+            content: |-
+              General engineering program.
+
+              Revelant Courses:
+                - Advanced machine learning
+                - Deep learning
+                - Data collection and visualization
+                - Advanced statistics and mathematics
+                - Software engineering
+                - Finance
+                - Entrepreneurial strategy
+          - title: "CPGE MPI."
+            school:
+              name: "Lycée Pierre de Fermat"
+              url: "https://fermat.mon-ent-occitanie.fr/classes-preparatoires-aux-grandes-ecoles/"
+            date: "2021-2023"
+            content: |-
+              Mathematics, physics, and theoretical computer science.
+
+      achievements:
+        enable: false
+        items:
+          - title: Google kickstart runner
+            content: I solved all problems with optimal solution.
+            url: https://example.com
+            image: /images/achievement.jpg
+
+      contact:
+        enable: true
+        content: My inbox is always open. Feel free to send me a question or anything else!
+        btnName: Mail me
+        btnLink: mailto:paulaporte0@gmail.com
+
   fr:
     contentDir: "content/fr"
     languageName: "Français"
     weight: 2
     params:
       hero:
+        enable: true
         intro: "Bonjour, je m'appelle"
         title: "Paul."
         subtitle: "J'aime le développement et les nouvelles technologies"
@@ -59,7 +233,6 @@ languages:
       
       projects:
         enable: true
-        # title: "Custom Name"
         items:
           - title: ML vs Deep Learning pour la prédiction de valeurs foncières
             content: Développement d'une pipeline complète d'estimation immobilière comparant l'efficacité des arbres boostés et des architectures Transformer sur les données DVF (~13M d'entrées).
@@ -89,17 +262,32 @@ languages:
             links:
               - icon: fab fa-github
                 url: https://github.com/Poportee/pisa_data_collection
+          - title: Bibliothèque de jeux Java
+            content: Conception d’une bibliothèque de jeux rétro (Pac-Man, échecs, morpion) entièrement en Java, avec une architecture extensible et une gestion du rendu via AWT/Swing.
+            image: /images/projects/java_games_lib.png
+            featured:
+              name: Aperçu
+              link: /fr/projects/java_games_lib_fr/
+              newPage: false
+            badges:
+              - "Programmation Orientée Objet"
+              - "Java"
+              - "Architecture Logicielle"
+            links:
+              - icon: fab fa-github
+                url: https://github.com/Poportee/java_games_library
 
       experience:
         enable: true
-        # title: "Custom Name"
         items:
           - company: "CTU Prague"
             companyUrl: "https://www.cvut.cz/en"
             jobs:
               - name: "Stagiaire Data Scientist"
                 date: "Mai 2025 - Août 2025"
-                content: "Analyse des données téléphoniques tchèques et création de modèles statistiques prédictifs."
+                content: "Analyse des données téléphoniques tchèques et création de modèles statistiques prédictifs.
+                
+                  Statistics, Time Series, SVD."
                 info:
                   content: Travail de recherche en équipe pour faire une publication
                 featuredItems:
@@ -112,7 +300,9 @@ languages:
             jobs:
               - name: "Développeur Power BI"
                 date: "Nov 2024 - Fev 2025"
-                content: Création d'un tableau de bord dynamique et automatisé pour les statistiques financières de la station de ski de Réallon."
+                content: "Création d'un tableau de bord dynamique et automatisé pour les statistiques financières de la station de ski de Réallon.
+                
+                  PowerBI, DAX, PowerQuery."
                 featuredItems:
                   fontAwesomeIcons:
                     - icon: fa-plus
@@ -121,7 +311,6 @@ languages:
   
       education:
         enable: true
-        # title: "Custom Name"
         index: false
         items:
           - title: "Échange académique en ingénierie logicielle."
@@ -151,7 +340,7 @@ languages:
                 - Génie logiciel
                 - Finance
                 - Stratégie entrepreneuriale
-          - title: "CPGE MPI"
+          - title: "CPGE MPI."
             school:
               name: "Lycée Pierre de Fermat"
               url: "https://fermat.mon-ent-occitanie.fr/classes-preparatoires-aux-grandes-ecoles/"
@@ -161,7 +350,6 @@ languages:
       
       contact:
         enable: true
-        # title: "Custom Name"
         content: Ma boîte de réception est toujours ouverte. N’hésitez pas à m’envoyer une question ou autre chose !
         btnName: Mail me
         btnLink: mailto:paulaporte0@gmail.com
@@ -251,190 +439,21 @@ params:
 
   menu:
     sections:
+      - name: "Hero"
+        id: "hero"
+        weight: 1
       - name: "About"
         id: "about"
-        weight: 1
+        weight: 2
       - name: "Projects"
         id: "projects"
-        weight: 2  
+        weight: 3
       - name: "Experience"
         id: "experience"
-        weight: 3
+        weight: 4
       - name: "Education"
         id: "education"
-        weight: 4
-
-  # Hero
-  hero:
-    enable: true
-    intro: "Hi, my name is"
-    title: "Paul."
-    subtitle: "I like development and new technologies."
-    content: "A final-year engineering student looking for a final-year internship in machine learning and data science."
-    image: /images/me_cv.jpg
-    bottomImage:
-      enable: true  
-      roundImage: true
-    button:
-      enable: true
-      name: "Resume"
-      url: "/docs/Resume_Paul_Laporte_AI_engineer.pdf"
-      download: true
-      newPage: true
-    socialLinks:
-      fontAwesomeIcons:
-        - icon: fab fa-github
-          url: https://github.com/Poportee
-        - icon: fab fa-linkedin
-          url: https://linkedin.com/in/paulaporte-lkn/
-
-  # About
-  about:
-    enable: true
-    title: "About Me"
-    image: "/images/me.jpg"
-    content: |-
-      Currently an exchange student at the École de Technologie Supérieure in Montreal, I have a background as a generalist engineer specializing in artificial intelligence and data science. Curious by nature, I have explored various IT fields such as video game development, quantum computing, and software engineering.
-
-      I am currently looking for a final-year internship in machine learning.
-    skills:
-      enable: true
-      title: "Here are a few technologies I've been working with recently:"
-      items:
-        - "C"
-        - "PyTorch"
-        - "Cuda"
-        - "Unity"
-        - "OpenMP"
-
-  # projects
-  projects:
-    enable: true
-    # title: "Custom Name"
-    items:
-      - title: ML vs Deep Learning on real estate pricing
-        content: Built an end-to-end pipeline to estimate property prices, comparing the performance of Gradient Boosted Trees and Transformer architectures using French DVF open data (~13M entries).
-        image: /images/projects/ml_vs_dl.png
-        featured:
-          name: Demo
-          link: https://ml-vs-dl-property-pricing-demo.streamlit.app/
-        badges:
-          - "PyTorch"
-          - "LightGBM"
-          - "Transformers"
-          - "Feature Engineering"
-          - "API Data Gouv"
-        links:
-          - icon: fab fa-github
-            url: https://github.com/Poportee/ml-vs-dl-property-pricing
-      - title: Exploratory analysis and dashboard of PISA data
-        content: Cleaning and visualization of 600k+ rows to identify factors of academic success in Europe.
-        image: /images/projects/pisa_eng.png
-        featured:
-          name: Demo
-          link: https://paul-laporte.shinyapps.io/Scolaire-data/#section-sciences
-        badges:
-          - "R"
-          - "Shiny"
-          - "ggplot2"
-        links:
-          - icon: fab fa-github
-            url: https://github.com/Poportee/pisa_data_collection
-
-  experience:
-    enable: true
-    # title: "Custom Name"
-    items:
-      - company: "CTU Prague"
-        companyUrl: "https://www.cvut.cz/en"
-        jobs:
-          - name: "Data Scientist Intern"
-            date: "May 2025 - Aug 2025"
-            content: "Analysis of Czech phone data and creation of predictive statistical models."
-            info:
-              content: Research in team to publish a paper
-            featuredItems:
-              fontAwesomeIcons:
-                - icon: fa-plus
-                  url: https://react.dev/
-                  tooltip: See the post
-      - company: "Réallon"
-        companyUrl: "https://www.serreponcon.com/reallon/"
-        jobs:
-          - name: "Power BI Developer"
-            date: "Nov 2024 - Feb 2025"
-            content: "Creation of a dynamic and automated dashboard for the financial statistics of the Réallon ski resort."
-            featuredItems:
-              fontAwesomeIcons:
-                - icon: fa-plus
-                  url: https://react.dev/
-                  tooltip: See the post
-
-  # Education
-  education:
-    enable: true
-    # title: "Custom Name"
-    index: false
-    items:
-      - title: "Academic exchange in software engineering."
-        school:
-          name: "École de Technologie Supérieure, Montréal"
-          url: "https://www.etsmtl.ca/"
-        date: "2026"
-        content: |-
-          Revelant Courses: 
-            - Quantum computing
-            - Parallel computing architecture
-            - Artificial intelligence
-            - Video game development
-      - title: "Engineering degree."
-        school:
-          name: "IMT Mines Alès"
-          url: "https://www.imt-mines-ales.fr/"
-        date: "2023-2026"
-        content: |-
-          General engineering program.
-
-          Revelant Courses:
-            - Advanced machine learning
-            - Deep learning
-            - Data collection and visualization
-            - Advanced statistics and mathematics
-            - Software engineering
-            - Finance
-            - Entrepreneurial strategy
-      - title: "CPGE MPI"
-        school:
-          name: "Lycée Pierre de Fermat"
-          url: "https://fermat.mon-ent-occitanie.fr/classes-preparatoires-aux-grandes-ecoles/"
-        date: "2021-2023"
-        content: |-
-          Mathematics, physics, and theoretical computer science.
-
-  # Achievements
-  achievements:
-    enable: false
-    # title: "Custom Name"
-    items:
-      - title: Google kickstart runner
-        content: I solved all problems with optimal solution.
-        url: https://example.com
-        image: /images/achievement.jpg
-
-
-  #Contact
-  contact:
-    enable: true
-    # title: "Custom Name"
-    content: My inbox is always open. Feel free to send me a question or anything else!
-    btnName: Mail me
-    btnLink: mailto:paulaporte0@gmail.com
-    # formspree:
-    #   enable: true # `contact.email` value will be ignored
-    #   formId: abcdefgh # Take it from your form's endpoint, like 'https://formspree.io/f/abcdefgh'
-    #   emailCaption: "Enter your email address"
-    #   messageCaption: "Enter your message here"
-    #   messageRows: 5
+        weight: 5
 
   footer:
     recentPosts:
@@ -453,7 +472,7 @@ params:
 
   # Single pages like blog and post
   singlePages:
-    socialShare: true
+    socialShare: false
     readTime:
       enable: true
       content: "min read"
